@@ -1,0 +1,63 @@
+C:\Users\AMAR>d:
+
+D:\>cd Node
+
+D:\Node>cd git
+
+D:\Node\git>git clone https://github.com/amargosavi/test.git
+Cloning into 'test'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+D:\Node\git>git clone https://github.com/amargosavi/test.git
+fatal: destination path 'test' already exists and is not an empty directory.
+
+D:\Node\git>cd test
+
+D:\Node\git\test>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        greet.js
+        hi.js
+        req.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Node\git\test>git add hi.js
+
+D:\Node\git\test>git commit - "add hi.js"
+error: pathspec '-' did not match any file(s) known to git.
+error: pathspec 'add hi.js' did not match any file(s) known to git.
+
+
+D:\Node\git\test>git config --global user.name "amargosavi"
+
+D:\Node\git\test>git config --global user.name
+amargosavi
+
+D:\Node\git\test>git config --global user.email "gosavigo@gmail.com"
+
+D:\Node\git\test>git config --global user.email
+gosavigo@gmail.com
+
+
+D:\Node\git\test>git commit -m "add hi.js"
+[master b9d952e] add hi.js
+ 1 file changed, 20 insertions(+)
+ create mode 100644 hi.js
+
+D:\Node\git\test>git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 451 bytes | 150.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/amargosavi/test.git
+   b2e940e..b9d952e  master -> master
+
+D:\Node\git\test>^A
